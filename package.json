@@ -4,6 +4,7 @@
   "private": true,
   "description": "Location bookmarking map app",
   "scripts": {
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "cd server && node index.js",
     "dev:client": "cd client && npx vite",
